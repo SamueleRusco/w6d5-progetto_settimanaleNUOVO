@@ -1,0 +1,18 @@
+main {
+  max-width: 100vw;
+
+  .contenitoreCard {
+    margin: 1em 0 1em 0;
+    padding: 1em;
+    width: 80vw;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    display: flex;
+    justify-content: space-around;
+
+    .card {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      width: 15rem;
+    }
+  }
+}
