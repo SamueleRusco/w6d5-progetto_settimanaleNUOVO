@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Samuele Rusco</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="assets/css/app.css" rel="stylesheet">
@@ -14,9 +14,9 @@
     <div>
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">samuele
-                    programmazione</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                <a class="navbar-brand" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><img
+                        class="srCoding" src="./assets/img/logo.png" style="width: 150px;" alt="logo"></a>
+                <button class="navbar-toggler me-5" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar">
                     <span class="">Vuoi scoprire i miei social?</span>
                 </button>
@@ -26,20 +26,24 @@
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">social</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
+                    <div id="toggle-btn"></div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page"
-                                    href="https://www.instagram.com/_marzioo/" target="_blank">instagram</a>
+                                    href="https://www.instagram.com/_marzioo/" target="_blank"> <i
+                                        class="bi bi-instagram"></i>
+                                    instagram</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="https://m.facebook.com/people/Samuele-Rusco/100009300816443/"
-                                    target="_blank">facebook</a>
+                                    target="_blank"><i class="bi bi-facebook"></i>
+                                    facebook</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link"
                                     href="https://www.youtube.com/watch?v=79ZK8YrKcZs&ab_channel=EmanuelLoRe"
-                                    target="_blank">OnlyFans</a>
+                                    target="_blank"><i class="bi bi-exclamation-triangle"></i> Numero di telefono</a>
                             </li>
 
                         </ul>
@@ -119,7 +123,7 @@
                 <div class="card col 3">
 
                     <div class="d-flex flex-column justify-content-between">
-                        <img src="https://m.media-amazon.com/images/G/01/sell/images/prime-boxes/prime-boxes-2.png"
+                        <img src="data:image/png;base64,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"
                             style="width: 75px;" class="card-img-top" alt="...">
 
                         <div class="card-body">
@@ -135,16 +139,16 @@
 
 
         </main>
-        <h2>Cosa dicono di noi:</h2>
+        <h2>Cosa dicono di Me:</h2>
         <section class="carosello">
 
 
             <section class="contenitoreCarosello">
 
-                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExampleInterval" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
                         data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
