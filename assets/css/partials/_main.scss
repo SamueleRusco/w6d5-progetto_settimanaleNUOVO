@@ -16,3 +16,29 @@ main {
     }
   }
 }
+
+#toggle-btn {
+  display: inline-block;
+  width: 86px;
+  height: 48px;
+  background-color: #1ec3f4;
+  background-image: url("background@2x.png");
+  background-size: 100%;
+  border-radius: 24px;
+  position: relative;
+  transition: all ease-in-out 0.4s; /* animati tutti gli elementi (all), accelerazione ease-in-out, durata 0.4 secondi */
+  cursor: pointer;
+}
+
+#toggle-btn::before {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  border-radius: 50%;
+  left: 6px;
+  top: 6px;
+  content: "";
+  transition: all ease-in-out 0.4s;
+  z-index: 10;
+}
