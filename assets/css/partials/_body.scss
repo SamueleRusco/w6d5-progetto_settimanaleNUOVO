@@ -11,13 +11,16 @@ body {
   h2,
   h3,
   h5,
-  p {
+  p,
+  span,
+  li i,
+  a {
     color: white;
   }
   .card {
     background-color: darkblue;
   }
   .barraNavigazione {
-    background-color: rgb(38, 39, 93); !important
+    background-color: rgb(38, 39, 93);
   }
 }
