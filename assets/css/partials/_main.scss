@@ -19,8 +19,8 @@ main {
 
 #toggle-btn {
   display: inline-block;
-  width: 86px;
-  height: 48px;
+  width: 43px;
+  height: 24px;
   background-color: #1ec3f4;
   background-image: url("background@2x.png");
   background-size: 100%;
@@ -32,13 +32,21 @@ main {
 
 #toggle-btn::before {
   position: absolute;
-  width: 36px;
-  height: 36px;
+  width: 18px;
+  height: 18px;
   background-color: white;
   border-radius: 50%;
-  left: 6px;
-  top: 6px;
+  left: 3px;
+  top: 3px;
   content: "";
   transition: all ease-in-out 0.4s;
   z-index: 10;
+}
+
+#toggle-btn.toggle-btn--dark {
+  background-color: #13447e;
+}
+
+#toggle-btn.toggle-btn--dark::before {
+  left: 22px;
 }

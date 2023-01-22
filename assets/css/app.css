@@ -4,6 +4,24 @@ body {
   width: 100wv;
   height: 100vh;
   background-color: lightcyan;
+  transition: 0.5s;
+}
+
+.dark-mode {
+  background-color: rgb(19, 19, 61);
+}
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h5,
+.dark-mode p {
+  color: white;
+}
+.dark-mode .card {
+  background-color: darkblue;
+}
+.dark-mode .barraNavigazione {
+  background-color: rgb(38, 39, 93);
 }
 
 p {
@@ -52,6 +70,40 @@ main .contenitoreCard .card {
   margin-top: 1em;
   margin-bottom: 1em;
   width: 15rem;
+}
+
+#toggle-btn {
+  display: inline-block;
+  width: 43px;
+  height: 24px;
+  background-color: #1ec3f4;
+  background-image: url("background@2x.png");
+  background-size: 100%;
+  border-radius: 24px;
+  position: relative;
+  transition: all ease-in-out 0.4s; /* animati tutti gli elementi (all), accelerazione ease-in-out, durata 0.4 secondi */
+  cursor: pointer;
+}
+
+#toggle-btn::before {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border-radius: 50%;
+  left: 3px;
+  top: 3px;
+  content: "";
+  transition: all ease-in-out 0.4s;
+  z-index: 10;
+}
+
+#toggle-btn.toggle-btn--dark {
+  background-color: #13447e;
+}
+
+#toggle-btn.toggle-btn--dark::before {
+  left: 22px;
 }
 
 .carosello {
